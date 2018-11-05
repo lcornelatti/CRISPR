@@ -18,6 +18,9 @@ def find_guides(sequence):
 
 
 print("Hello world")
+print("Hello world")
+print("Hello world")
+print("Hello world")
 
 def main():
 
