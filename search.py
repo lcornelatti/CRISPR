@@ -17,14 +17,15 @@ def find_guides(sequence):
     return guides
 
 
-print("Hello world")
-print("Hello world")
-print("Hello world")
-print("Hello world")
+def score_guide(guide):
+    print('hi')
+
 
 def main():
 
-    genome = 'attcagaaattatataggaaaaatatttcatctagactggtccgtccccagcacccaactgactccccgggatccgaggctccctgagttgcaatgccgtggtaccgaaatcagtagagtgtccgccgtgttgtccgcgactagacgt'.upper()
+    genome = 'attcagaaattatataggaaaaatatttcatctagactggtccgtccccagcacccaactgactccccgggatccgaggctccctgagttg\
+              caatgccgtggtaccgaaatcagtagagtgtccgccgtgttgtccgcgactagacgt'.upper()
+
     sequence = 'atccacctaatccagaatccaacagggctt'.upper()
     complement = get_complement(sequence)
     guides = find_guides(sequence)
@@ -35,6 +36,7 @@ def main():
     for guide in guides:
         score = score_guide(guide)
         scores.append(score)
+
 
 if __name__ == "__main__":
     main()
