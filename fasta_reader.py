@@ -20,10 +20,14 @@ def get_string(filename):
             sequence = line
             fasta[active_sequence_name].append(sequence)
 
-    print(fasta[seq_name][0])
+    for key in fasta.keys():
+        print(key)
+        print(fasta[key][0])
+
+
 
     return fasta[seq_name]
 
 
-genome = get_string(u"C:\\Users\\leoco\\Downloads\\aae_ref_AaegL5.0_chr1.fa")
+genome = get_string("C:\\Users\\leoco\\Desktop\\Project\\hs_ref_GRCh38.p12_chr22.fa")
 print(len(genome))
